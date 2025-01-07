@@ -1,82 +1,82 @@
-# Firefox Sidebar / Edge-like Vertical Tabs (but better!)
+# Firefox Sidebar (Edge-Like Vertical Tabs)
 
-**Note:** This repo was originally a subdirectory of [drannex42/linux-utils](https://github.com/drannex42//linux-utils/), but has now become a standalone repo for my Firefox Sidebar CSS and Utilities. The original linux-utils files can be found [here](https://github.com/drannex42/utils).
+**Note as of v2-2025.01.07:** 
+
+- This is now using (and replaces!) the new built in Firefox 133/134/135 vertical tabs, make sure you are updated. 
+- This allows you to replace it with any of your preferred vertical tab extension options:
+    - Sidebery (preferred), TreeStyleTabs, etc. 
+- If you are still on an older version of Firefox, please check the releases page for the older versions. 
 
 ## Example
-Video of the extension in action: [https://i.imgur.com/HaLvkFc.mp4](https://i.imgur.com/HaLvkFc.mp4)
 
 https://user-images.githubusercontent.com/4322153/205100497-f56637c4-1d46-4c15-b349-d0b53f2838a0.mp4
 
+Note: This is an older version, but the effect and design is still roughly the same.
+
 ## Features:
+
   - Edge-like vertical tab design
-  - Tree style tab layout support (works with Sideberry & TST (legacy) version)
-  - Dynamic Indentation
+  - Tree style tab layout support (works with Sideberry & TST)
+  - *Dynamic Indentation*
   - Automatic theme configuration for light and dark themes
-  - Custom theme configuration using Sideberry
+  - Custom theme configuration using Sidebery, or any other. 
   - Support for tab groups
   - Support for Tab Containers with visual identification
   - Pinned tabs (right click to close)
-  - Built in CSS Extension Management
+  - Simplified design (smallest compared to any other) by using Firefox 133, for older versions.
+  - Longest lasting and oldest (and first?) major dynamic firefox sidebar extension w/ regular updates. 
 
-# How to use
+# Instructions (setup)
 
-To use FirefoxSidebar you will need to clone this repo into your firefox profile as the `chrome` folder and then follow the Sideberry section below. Both are outlined below in how to do so.
+To use FirefoxSidebar you will need to clone this repo into your Firefox profile as the `chrome` folder and then follow the Sideberry section below. Both are outlined below in how to do so.
 
-## 1. userChrome.css
+1. Activate experimental sidebar 
+    1. Navigate to the Firefox Labs section in [Settings](about:preferences#experimental) `(about:preferences#experimental)`
+    2. Activate "Sidebar" 
+    3. Activate "Vertical Tabs"
+    
+2. Update userChrome.css 
+    1. Navigate to [about:profiles](about:profiles) `(about:profiles)`in your address bar
+    2. Click on the 'open root folder` button for your current profile
+    3. Open this folder in your terminal
+    4. Clone this repo with the following command: `git clone https://github.com/wizrdsh/FirefoxSidebar.git "chrome"`
 
-Follow the instructions for adding this repository to your Firefox Profile.
-
-1. Navigate to `about:profiles` in your address bar
-2. Click on the 'open root folder` button for your current profile
-3. Open this folder in your terminal
-4. Clone this repo with the following command: `git clone https://github.com/drannex42/FirefoxSidebar.git "chrome"`
-5. In Firefox navigate to `about:config` in your address bar
-6. change the characteristic `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
-7. Restart Firefox
+3. Activate userChrome.css modification flag
+    1. In Firefox navigate to [about:config](about:config) in your address bar
+    2. Search for the characteristic `toolkit.legacyUserProfileCustomizations.stylesheets`
+    3. Double click, or change this to `true`
+    4. Restart Firefox
 
 You could skip the clone step entirely if you manually add the FirefoxSidebar files to the "chrome" folder in your Firefox Profile (you will need to make a `chrome` folder if it doesn't exist!).
 
-Visit [userchrome.org](https://www.userchrome.org/how-create-userchrome-css.html) if you are confused or have any questions.
+Visit [userchrome.org](https://www.userchrome.org/how-create-userchrome-css.html) if you have any questions.
 
-## 2. Sidebery (Sideberry)
-
-Load the `sidebery-data.json` file into your Sidebery addon by using the 'import' section under 'Help'.
+4. Load the custom sidebery theme and settings (optional, suggested!)
+    1. Navigate to sidebery settings - [moz-extension://d6dfc617-d672-45b6-8293-f37e07a55dce/page.setup/setup.html#settings_appearance](moz-extension://d6dfc617-d672-45b6-8293-f37e07a55dce/page.setup/setup.html#settings_appearance)
+    2. Click on "Help" in the sidebar 
+    3. Click on "Import addon data"
+    4. Load the `sidebery-data.json` file
 
 If you dislike any of the theme presets for dark or light themes, or you have a particular color scheme in mind then navigate to Sideberry Settings > Style Editor (found at the end of the settings sidebar). The preference is to replace the values in the right panel, not in the theme editor to the left - this way you can easily update to newer versions in the future.
 
-### Extensions
+## How to use 
 
-All extensions can be found in `/extensions`.
+1. Follow the installation instructions above
+2. To switch your sidebar choice, hover over the bottom "settings" icon in the sidebar. 
 
-In version 2022.02.23 we broke up the components into extensions using css imports. This makes adding and removing features incredibly easy.
 
-**The following extensions are added by default:**
+## Custom Modifications
 
-- [Window Controls / Client Side Decorations (CSD)](/extensions/window_controls.css)
-  - This adds the window controls to be inline with your address bar.
+Add any additional Firefox modifications into `custom.css`, these will not be overwritten on future sidebar updates.
 
-There are a number of additional 'extensions' added in that folder. 
+## Extensions  & Preferences
 
-## User Settings
-
-Please backup the `prefs.css` and the `custom.css` files before updating to a new versionof FirefoxSidebar.  There may be new additions to these files, so you will need to re-add your preferencess to the file accordingly. These files should be updated *far less* than the other files, but just to make sure please save them.
-
-### Preferences
-
-There are a number of preferences you can enable or disable in the `prefs.css` file. There are examples and descriptions of the different preferences within that file.
-
-### Custom Tweaks
-
-For ease of use I suggest using the `custom.css` file to for your personal tweaks.
-
-### If you use FF without the bookmarks bar
-
-Then the sidebar switcher will be missing, edit `userChrome.css` and uncomment the relevant section.
+These have been removed as of v2.2025.01.07. 
 
 ## TreeStyleTabs (Legacy)
 
-Either add the firefox/treestyletabs.css to your TST addon preferences or import the treestyletabs-\*.json preferences to your TST addon (_prefered_)
+Either add the firefox/treestyletabs.css to your TST addon preferences or import the treestyletabs-\*.json preferences to your TST addon.
 
 ## Updates
 
-Release notes have migrated to [here](https://github.com/drannex42/FirefoxSidebar/releases). You can find prior release notes before v12021.12.22 [here](https://github.com/drannex42/FirefoxSidebar/releases/tag/v12021.12.22).
+Release notes have migrated to [here](https://github.com/wizrdsh/FirefoxSidebar/releases). You can find prior release notes before v12021.12.22 [here](https://github.com/wizrdsh/FirefoxSidebar/releases/tag/v12021.12.22).
