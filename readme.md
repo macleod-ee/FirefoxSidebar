@@ -1,5 +1,10 @@
 # Firefox Sidebar (Edge-Like Vertical Tabs)
 
+
+**Note as of 2025.01.20:** 
+
+This version uses the new and improved sidebar integration in Firefox, as we have come to learn, this is ***only available in Nightly***. please see the older versions previous to v2-2025.01.07 for installation instructions. 
+
 **Note as of v2-2025.01.07:** 
 
 - This is now using (and replaces!) the new built in Firefox 133/134/135 vertical tabs, make sure you are updated. 
