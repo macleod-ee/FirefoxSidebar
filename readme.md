@@ -1,19 +1,11 @@
 # Firefox Sidebar (Edge-Like Vertical Tabs)
 
-**Note as of 2025.02.09:** 
-
-This version is now available in atleast the developer-edition, unknown in stable. The actition of the new native vertical tab subsystem is now even easier, the instructions below are updated. **This overrides the default vertical tab subsystem, replaces it with Sidebery (or TST), and allows for *dynamic indentation*.   
-
-- This is now using (and replaces!) the new built in Firefox 134<?)+  vertical tabs, make sure you are updated. 
-- This allows you to replace it with any of your preferred vertical tab extension options:
-    - Sidebery (preferred), TreeStyleTabs, etc. 
-- If you are still on an older version of Firefox, please check the releases page for the older versions. 
-
 ## Example
 
 https://user-images.githubusercontent.com/4322153/205100497-f56637c4-1d46-4c15-b349-d0b53f2838a0.mp4
 
-Note: This is an older version, but the effect and design is still roughly the same.
+The above *is* an older version, but the effect and design is still generally the same.
+
 
 ## Features:
 
@@ -26,7 +18,16 @@ Note: This is an older version, but the effect and design is still roughly the s
   - Support for Tab Containers with visual identification
   - Pinned tabs (right click to close)
   - Simplified design (smallest compared to any other) by using Firefox 133, for older versions.
-  - Longest lasting and oldest (and first?) major dynamic firefox sidebar extension w/ regular updates. 
+  - Longest lasting and oldest (and first?) major dynamic firefox sidebar extension w/ regular updates.
+
+
+## Note as of 2025.02.09
+This version is now available in (at  least) the developer-edition, unknown in stable. The activation of the new native vertical tab subsystem is now even easier, the instructions below are updated. **This overrides the default vertical tab subsystem, replaces it with Sidebery (or TST), and allows for *dynamic indentation***.   
+
+- This is now using (and replaces!) the new built in Firefox 134<?>+ vertical tabs, make sure you are updated. 
+- This allows you to replace it with any of your preferred vertical tab extension options:
+    - Sidebery (preferred), TreeStyleTabs, etc. 
+- If you are still on an older version of Firefox, please check the releases page for the older versions. 
 
 # Instructions (setup)
 
