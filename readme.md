@@ -1,13 +1,10 @@
 # Firefox Sidebar (Edge-Like Vertical Tabs)
 
+**Note as of 2025.02.09:** 
 
-**Note as of 2025.01.20:** 
+This version is now available in atleast the developer-edition, unknown in stable. The actition of the new native vertical tab subsystem is now even easier, the instructions below are updated. **This overrides the default vertical tab subsystem, replaces it with Sidebery (or TST), and allows for *dynamic indentation*.   
 
-This version uses the new and improved sidebar integration in Firefox, as we have come to learn, this is ***only available in Nightly***. please see the older versions previous to v2-2025.01.07 for installation instructions. 
-
-**Note as of v2-2025.01.07:** 
-
-- This is now using (and replaces!) the new built in Firefox 133/134/135 vertical tabs, make sure you are updated. 
+- This is now using (and replaces!) the new built in Firefox 134<?)+  vertical tabs, make sure you are updated. 
 - This allows you to replace it with any of your preferred vertical tab extension options:
     - Sidebery (preferred), TreeStyleTabs, etc. 
 - If you are still on an older version of Firefox, please check the releases page for the older versions. 
@@ -36,9 +33,8 @@ Note: This is an older version, but the effect and design is still roughly the s
 To use FirefoxSidebar you will need to clone this repo into your Firefox profile as the `chrome` folder and then follow the Sideberry section below. Both are outlined below in how to do so.
 
 1. Activate experimental sidebar 
-    1. Navigate to the Firefox Labs section in [Settings](about:preferences#experimental) `(about:preferences#experimental)`
-    2. Activate "Sidebar" 
-    3. Activate "Vertical Tabs"
+    1. Right click on any open space on the tab bar
+    2. Select "Turn on vertical tabs"
     
 2. Update userChrome.css 
     1. Navigate to [about:profiles](about:profiles) `(about:profiles)`in your address bar
