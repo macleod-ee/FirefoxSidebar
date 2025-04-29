@@ -1,9 +1,18 @@
 /*
   Extension (Core): Sidebar
-  Description: This is the core implementation of the sidebar used in wizrdsh's FirefoxSidebar.
-  Repository URL: https://github.com/wizrdsh/FirefoxSidebar
-  Version: v2-2025.01.07 (YYYYY.MM.DD) 
+  Description: This is the core implementation of the sidebar used in drannex's FirefoxSidebar.
+  Repository URL: https://github.com/drannex/FirefoxSidebar
+  Version: v2-2025.04.29 (YYYYY.MM.DD) 
 */
+
+#main-window {
+  --sidebar-width: 50px;
+}
+
+/* Fullscreen fix: Change the width to 1px */
+#main-window[inFullscreen="true"] { 
+  --sidebar-width: 1px; 
+}
 
 /* Hide default vertical tabs */
 #vertical-tabs {
@@ -20,8 +29,8 @@
   order: 1 !important;
   z-index: 999;
   border: medium;
-  width: 50px !important;
-  max-width: 50px !important;
+  width: var(--sidebar-width) !important;
+  max-width: var(--sidebar-width) !important;
   flex-direction: column-reverse;
   position: absolute;
   bottom: 0px;
@@ -37,8 +46,8 @@
 
 /* Sidebar extension */
 #sidebar-box {
-  width: 50px !important;
-  min-width: 50px !important;
+  width: var(--sidebar-width) !important;
+  min-width: var(--sidebar-width) !important;
   z-index: 98 !important;
   box-shadow: none !important;
   position: absolute !important;
@@ -66,7 +75,7 @@
 
 #tabbrowser-tabbox[sidebar-shown] {
   border-radius: 0px !important;
-  padding-left: 50px;
+  padding-left: var(--sidebar-width);
   border: medium !important;
   box-shadow: none !important;
 }
@@ -88,3 +97,4 @@
   padding-top: 0px;
   padding-bottom: 6px;
 }
+
