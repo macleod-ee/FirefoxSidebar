@@ -2,7 +2,7 @@
   Extension (Core): Sidebar
   Description: This is the core implementation of the sidebar used in drannex's FirefoxSidebar.
   Repository URL: https://github.com/drannex/FirefoxSidebar
-  Version: v2-2025.04.29 (YYYYY.MM.DD) 
+  Version: v2-2025.05.05 (YYYYY.MM.DD) 
 */
 
 #main-window {
@@ -22,6 +22,11 @@
 /* Remove the border radius on the webview */
 #browser {
   border-radius: 0px !important;
+}
+
+/* Remove the sidebar header */
+#sidebar-panel-header {
+  display: none;
 }
 
 /* Sidebar switcher toolbar */
