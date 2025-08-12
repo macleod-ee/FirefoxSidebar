@@ -1,0 +1,105 @@
+/*
+  Extension (Core): Sidebar
+  Description: This is the core implementation of the sidebar used in drannex's FirefoxSidebar.
+  Repository URL: https://github.com/drannex/FirefoxSidebar
+  Version: v2-2025.05.05 (YYYYY.MM.DD) 
+*/
+
+#main-window {
+  --sidebar-width: 50px;
+}
+
+/* Fullscreen fix: Change the width to 1px */
+#main-window[inFullscreen="true"] { 
+  --sidebar-width: 1px; 
+}
+
+/* Hide default vertical tabs */
+#vertical-tabs {
+  display: none !important;
+}
+
+/* Remove the border radius on the webview */
+#browser {
+  border-radius: 0px !important;
+}
+
+/* Remove the sidebar header */
+#sidebar-panel-header {
+  display: none;
+}
+
+/* Sidebar switcher toolbar */
+#sidebar-main {
+  order: 1 !important;
+  z-index: 999;
+  border: medium;
+  width: var(--sidebar-width) !important;
+  max-width: var(--sidebar-width) !important;
+  flex-direction: column-reverse;
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden !important;
+  height: 50px;
+}
+
+#sidebar-main:hover {
+  z-index: 99;
+  height: fit-content;
+  background: var(--arrowpanel-background);
+}
+
+/* Sidebar extension */
+#sidebar-box {
+  width: var(--sidebar-width) !important;
+  min-width: var(--sidebar-width) !important;
+  z-index: 98 !important;
+  box-shadow: none !important;
+  position: absolute !important;
+  height: 100% !important;
+  padding: 0px !important;
+  border-right: 1px solid var(--chrome-content-separator-color);
+}
+
+#sidebar-box:hover {
+  width: 260px !important;
+}
+
+#sidebar-box #sidebar {
+  padding-bottom: 50px;
+  border: medium !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Web view container */
+#tabbrowser-tabbox {
+  padding-left: 0px;
+}
+
+#tabbrowser-tabbox[sidebar-shown] {
+  border-radius: 0px !important;
+  padding-left: var(--sidebar-width);
+  border: medium !important;
+  box-shadow: none !important;
+}
+
+/* Fix the dreaded verticalalignment on the new buttons... */
+#sidebar-button {
+  padding-left: 9px;
+  margin-right: -3px;
+  padding-top: 1px;
+}
+
+#alltabs-button {
+  padding-top: 1px;
+}
+
+/* Spacing adjustment for bookmark bar */
+#PlacesToolbarItems {
+  padding-left: 4px;
+  padding-top: 0px;
+  padding-bottom: 6px;
+}
+

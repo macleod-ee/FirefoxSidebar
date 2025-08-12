@@ -1,0 +1,26 @@
+/*
+  Title: Drannex's FirefoxSidebar / Vertical Tabs
+  Description: Vertical tab design for Firefox with dynamic indentation::
+    Sideberry and TreeStyleTabs (Legacy) themes available!
+  Repository URL: https://github.com/drannex/FirefoxSidebar
+  Version: v2-2025.01.07
+*/
+
+/*
+  Preferences / Settings ::
+  Use this file to set your preferences this will save them in one place for easier future updating
+  =========================================================================
+*/
+  @import url("./prefs.css");
+
+/*
+  Custom modifications ::
+  If you have any custom CSS for Firefox, place them in this file.
+  =========================================================================
+*/
+  @import url("./custom.css");
+
+
+/* Sidebar (Core) :: This file is for the sidebar implementation */
+  @import url("./extensions/sidebar.css");
+
