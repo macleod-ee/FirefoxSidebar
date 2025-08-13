@@ -54,7 +54,7 @@ The instructions may seem like quite a lot, but the entire proces takes less tha
     3. Open this folder location in your terminal
     4. Clone this repo with the following command: `git clone https://codeberg.org/dxfiers/FirefoxSidebar "chrome"`
         1. *You may need to install `git` for this to work* -> [Git Downloads](https://git-scm.com/downloads)
-        2. If installing `git` is not possible, then download the latest `Source Code (zip)` files from [Releases](https://codeberg.org/dxfiers/FirefoxSidebar/releases), create a folder called `chrome` inside your current profile, unzip and move the files into that folder.
+        2. If installing `git` is not possible, then download the latest `Source Code (zip)` files from [Releases](https://codeberg.org/macleod/FirefoxSidebar/releases), create a folder called `chrome` inside your current profile, unzip and move the files into that folder.
 
 4. Load the custom Sidebery theme and settings *(optional, suggested!)*:
     1. Navigate to Sidebery settings (Right click on the Sidebery extension icon > "Open Settings")
