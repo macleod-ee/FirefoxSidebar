@@ -1,15 +1,15 @@
-# [Firefox Sidebar (w/ Dynamic Indentation)](https://codeberg.org/dxfiers/FirefoxSidebar)
+# [Firefox Sidebar (w/ Dynamic Indentation)](https://codeberg.org/macleod/FirefoxSidebar)
 
 **As GitHub is now officially just a Microsoft Copilot feeder *product* instead of a universal, global,  code repository, we have migrated this project to Codeberg, a non-profit.**
 
 While we understand that companies and organizations inevitably use our **public** code anywhere to seed their models, we would prefer not directly helping the organizations do it on the platform of their choosing, and make them work just a *smidge* harder to get it. As GH also hosts the most number of private repositories, there is an ethical issue with allowing any of our code reside here, public or not. 
 
-## **[ :: All new releases will be found here :: ](https://codeberg.org/dxfiers/FirefoxSidebar)**
+## **[ :: All new releases will be found here :: ](https://codeberg.org/macleod/FirefoxSidebar)**
 
 ***TO SET YOUR NEW ORIGIN URL, USE THE FOLLOWING COMMAND:***
 
 ```
-git remote set-url origin https://codeberg.org/dxfiers/FirefoxSidebar.git
+git remote set-url origin https://codeberg.org/macleod/FirefoxSidebar.git
 ```
 
 Previous readme with updated (git) instructions:
@@ -84,4 +84,4 @@ This is a legacy support theme and not often changed.
 
 ## Updates
 
-Release notes have migrated to [here](https://codeberg.org/dxfiers/FirefoxSidebar/releases). 
+Release notes have migrated to [here](https://codeberg.org/macleod/FirefoxSidebar/releases). 
